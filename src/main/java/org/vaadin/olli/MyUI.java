@@ -26,6 +26,7 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         final VerticalLayout layout = new VerticalLayout();
+        setMobileHtml5DndEnabled(true);
         layout.setSizeFull();
         List<Person> personList = new ArrayList<>();
         for (int i = 0; i < 50; i++) {
